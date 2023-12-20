@@ -15,6 +15,8 @@
 		FC8B0BC62B1350E5001A47F3 /* TeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8B0BC52B1350E5001A47F3 /* TeeUITests.swift */; };
 		FC8B0BC82B1350E5001A47F3 /* TeeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8B0BC72B1350E5001A47F3 /* TeeUITestsLaunchTests.swift */; };
 		FC8B0BD62B135585001A47F3 /* DylKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC8B0BD52B135585001A47F3 /* DylKit */; };
+		FCAD24D92B141CF100DA0A50 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD24D82B141CF100DA0A50 /* SnapshotHelper.swift */; };
+		FCAD24DB2B141D9900DA0A50 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD24DA2B141D9900DA0A50 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		FC8B0BC12B1350E5001A47F3 /* TeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8B0BC52B1350E5001A47F3 /* TeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeUITests.swift; sourceTree = "<group>"; };
 		FC8B0BC72B1350E5001A47F3 /* TeeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCAD24D82B141CF100DA0A50 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		FCAD24DA2B141D9900DA0A50 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FC8B0BA92B1350DF001A47F3 /* TeeApp.swift */,
+				FCAD24DA2B141D9900DA0A50 /* LocationManager.swift */,
 				FC8B0BAB2B1350DF001A47F3 /* ContentView.swift */,
 				FC8B0BAD2B1350E4001A47F3 /* Assets.xcassets */,
 				FC8B0BAF2B1350E4001A47F3 /* Tee.entitlements */,
@@ -125,6 +130,7 @@
 		FC8B0BC42B1350E5001A47F3 /* TeeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				FCAD24D82B141CF100DA0A50 /* SnapshotHelper.swift */,
 				FC8B0BC52B1350E5001A47F3 /* TeeUITests.swift */,
 				FC8B0BC72B1350E5001A47F3 /* TeeUITestsLaunchTests.swift */,
 			);
@@ -269,6 +275,7 @@
 			files = (
 				FC8B0BAC2B1350DF001A47F3 /* ContentView.swift in Sources */,
 				FC8B0BAA2B1350DF001A47F3 /* TeeApp.swift in Sources */,
+				FCAD24DB2B141D9900DA0A50 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +293,7 @@
 			files = (
 				FC8B0BC62B1350E5001A47F3 /* TeeUITests.swift in Sources */,
 				FC8B0BC82B1350E5001A47F3 /* TeeUITestsLaunchTests.swift in Sources */,
+				FCAD24D92B141CF100DA0A50 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

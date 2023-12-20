@@ -21,7 +21,7 @@ extension Array where Element == AddressRow {
 }
 
 class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-    let locationManager: CLLocationManager
+    let locationManager: LocationManager
     let geocoder: CLGeocoder = .init()
     
     @Published var rows: [AddressRow]
@@ -29,8 +29,7 @@ class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     var hasRequestedLocation: Bool { locationManager.authorizationStatus != .notDetermined}
     
     override init() {
-        let locationManager =  CLLocationManager()
-        self.locationManager = locationManager
+        self.locationManager = .init()
         self.rows = []
         self.hasLocationPermission = locationManager.authorized
         super.init()
@@ -156,7 +155,8 @@ extension CLPlacemark {
     }
     
     var nameIfDifferentFromThoroughfare: String? {
-        guard let name = name, let fullThoroughfare = fullThoroughfare else { return nil }
+        let name = name
+        let fullThoroughfare = fullThoroughfare
         return name != fullThoroughfare ? name : nil
     }
 }
