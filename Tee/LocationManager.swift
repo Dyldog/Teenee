@@ -8,7 +8,7 @@
 import CoreLocation
 
 class LocationManager {
-    private var isTests: Bool { true } //ProcessInfo.processInfo.arguments.contains("testMode") }
+    private var isTests: Bool { ProcessInfo.processInfo.arguments.contains("testMode") }
     let locationManager: CLLocationManager
     var delegate: CLLocationManagerDelegate? {
         get { locationManager.delegate }
